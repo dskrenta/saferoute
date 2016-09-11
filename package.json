@@ -13,7 +13,6 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-connect": "^4.0.0",
-    "gulp-riot": "^0.5.2",
     "riot-cli": "^2.6.1"
   }
 }

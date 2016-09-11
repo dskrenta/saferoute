@@ -1,0 +1,1061 @@
+{
+   "geocoded_waypoints" : [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "Eio3ODEgTGV4aW5ndG9uIEF2ZSwgTmV3IFlvcmssIE5ZIDEwMDY1LCBVU0E",
+         "types" : [ "street_address" ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "Eic0LTMwIFcgNjNyZCBTdCwgTmV3IFlvcmssIE5ZIDEwMDIzLCBVU0E",
+         "types" : [ "street_address" ]
+      }
+   ],
+   "routes" : [
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 40.7708316,
+               "lng" : -73.96727319999999
+            },
+            "southwest" : {
+               "lat" : 40.763483,
+               "lng" : -73.9808108
+            }
+         },
+         "copyrights" : "Map data ©2016 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.1 mi",
+                  "value" : 1711
+               },
+               "duration" : {
+                  "text" : "22 mins",
+                  "value" : 1314
+               },
+               "end_address" : "4-30 W 63rd St, New York, NY 10023, USA",
+               "end_location" : {
+                  "lat" : 40.7708316,
+                  "lng" : -73.9808108
+               },
+               "start_address" : "781 Lexington Ave, New York, NY 10065, USA",
+               "start_location" : {
+                  "lat" : 40.763483,
+                  "lng" : -73.96727319999999
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 522
+                     },
+                     "duration" : {
+                        "text" : "7 mins",
+                        "value" : 418
+                     },
+                     "end_location" : {
+                        "lat" : 40.7657852,
+                        "lng" : -73.9726804
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorthwest\u003c/b\u003e on \u003cb\u003eE 61st St\u003c/b\u003e toward \u003cb\u003ePark Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "wrxwFlvmbM}BlHQf@aCpHeC|H]bAWn@"
+                     },
+                     "start_location" : {
+                        "lat" : 40.763483,
+                        "lng" : -73.96727319999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 352
+                     },
+                     "duration" : {
+                        "text" : "5 mins",
+                        "value" : 273
+                     },
+                     "end_location" : {
+                        "lat" : 40.7688358,
+                        "lng" : -73.97296009999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eEast Dr\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "eaywFfxnbMc@QIAQCO?S@KBMDIBSLm@^]NSHYHo@JYDW@W@S?O?]AK?YE]EYEq@S"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7657852,
+                        "lng" : -73.9726804
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.1 mi",
+                        "value" : 229
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 165
+                     },
+                     "end_location" : {
+                        "lat" : 40.7696634,
+                        "lng" : -73.97536219999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "gtywF~ynbMCRCXCVCLEPs@zB[fASf@GJCFGJMT?@IPGVFd@@D"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7688358,
+                        "lng" : -73.97296009999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "157 ft",
+                        "value" : 48
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 33
+                     },
+                     "end_location" : {
+                        "lat" : 40.7698201,
+                        "lng" : -73.97584020000001
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "kyywF~hobMGDGDGJEJAJAH?J@X"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7696634,
+                        "lng" : -73.97536219999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "381 ft",
+                        "value" : 116
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 78
+                     },
+                     "end_location" : {
+                        "lat" : 40.769168,
+                        "lng" : -73.9768366
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e toward \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "kzywF~kobMNFPJPLJL\\f@HPFTFZDZBN"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7698201,
+                        "lng" : -73.97584020000001
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "390 ft",
+                        "value" : 119
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 89
+                     },
+                     "end_location" : {
+                        "lat" : 40.7697267,
+                        "lng" : -73.97796240000001
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e toward \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "ivywFfrobMg@f@UVMVKVGRGTCXAVAR"
+                     },
+                     "start_location" : {
+                        "lat" : 40.769168,
+                        "lng" : -73.9768366
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "174 ft",
+                        "value" : 53
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 37
+                     },
+                     "end_location" : {
+                        "lat" : 40.77015979999999,
+                        "lng" : -73.97822499999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e toward \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "yyywFfyobMIJQJe@TSD"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7697267,
+                        "lng" : -73.97796240000001
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "285 ft",
+                        "value" : 87
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 77
+                     },
+                     "end_location" : {
+                        "lat" : 40.7704719,
+                        "lng" : -73.97913489999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e toward \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "o|ywFzzobMIl@APAPCTM`@ERWV"
+                     },
+                     "start_location" : {
+                        "lat" : 40.77015979999999,
+                        "lng" : -73.97822499999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "105 ft",
+                        "value" : 32
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 27
+                     },
+                     "end_location" : {
+                        "lat" : 40.7704548,
+                        "lng" : -73.979505
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e toward \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "m~ywFp`pbM@F@D@@?@?@?B@@?@?B?BAF?BAX"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7704719,
+                        "lng" : -73.97913489999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "174 ft",
+                        "value" : 53
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 41
+                     },
+                     "end_location" : {
+                        "lat" : 40.7708024,
+                        "lng" : -73.9799233
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e toward \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "i~ywFzbpbMOFQNILYl@"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7704548,
+                        "lng" : -73.979505
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "108 ft",
+                        "value" : 33
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 22
+                     },
+                     "end_location" : {
+                        "lat" : 40.7705407,
+                        "lng" : -73.98011699999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "o`zwFnepbMr@f@"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7708024,
+                        "lng" : -73.9799233
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "220 ft",
+                        "value" : 67
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 54
+                     },
+                     "end_location" : {
+                        "lat" : 40.7708316,
+                        "lng" : -73.9808108
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eW 63rd St\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "{~ywFvfpbMy@hC"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7705407,
+                        "lng" : -73.98011699999999
+                     },
+                     "travel_mode" : "WALKING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : []
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "wrxwFlvmbMwKd]u@rBm@Sa@C_@DWHaAl@q@XiATq@Fk@@m@Ae@Ew@Kq@SCRGp@I^oAbE[r@Yh@IRGVFd@@DGDOPGVAT@XNFb@Xh@t@Pf@Lv@BNg@f@UVMVSj@Kn@Cj@[Vy@ZQfBSt@WV@FBF?B@JCh@OFQNc@z@r@f@y@hC"
+         },
+         "summary" : "E 61st St",
+         "warnings" : [
+            "Walking directions are in beta.    Use caution – This route may be missing sidewalks or pedestrian paths."
+         ],
+         "waypoint_order" : []
+      },
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 40.7708316,
+               "lng" : -73.96727319999999
+            },
+            "southwest" : {
+               "lat" : 40.763483,
+               "lng" : -73.9808108
+            }
+         },
+         "copyrights" : "Map data ©2016 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.1 mi",
+                  "value" : 1736
+               },
+               "duration" : {
+                  "text" : "22 mins",
+                  "value" : 1337
+               },
+               "end_address" : "4-30 W 63rd St, New York, NY 10023, USA",
+               "end_location" : {
+                  "lat" : 40.7708316,
+                  "lng" : -73.9808108
+               },
+               "start_address" : "781 Lexington Ave, New York, NY 10065, USA",
+               "start_location" : {
+                  "lat" : 40.763483,
+                  "lng" : -73.96727319999999
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 465
+                     },
+                     "duration" : {
+                        "text" : "6 mins",
+                        "value" : 367
+                     },
+                     "end_location" : {
+                        "lat" : 40.7655163,
+                        "lng" : -73.97210059999999
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorthwest\u003c/b\u003e on \u003cb\u003eE 61st St\u003c/b\u003e toward \u003cb\u003ePark Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "wrxwFlvmbM}BlHQf@aCpHeC|H"
+                     },
+                     "start_location" : {
+                        "lat" : 40.763483,
+                        "lng" : -73.96727319999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "249 ft",
+                        "value" : 76
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 56
+                     },
+                     "end_location" : {
+                        "lat" : 40.76492409999999,
+                        "lng" : -73.9725552
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003e5th Ave\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "o_ywFrtnbMvBzA"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7655163,
+                        "lng" : -73.97210059999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "210 ft",
+                        "value" : 64
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 51
+                     },
+                     "end_location" : {
+                        "lat" : 40.7650826,
+                        "lng" : -73.9732432
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eDoris C Freedman Pl\u003c/b\u003e/\u003cb\u003eGrand Army Plaza\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "w{xwFnwnbMQ\\KXCHAFAFAH?D@F?H@D@F@D"
+                     },
+                     "start_location" : {
+                        "lat" : 40.76492409999999,
+                        "lng" : -73.9725552
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 245
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 182
+                     },
+                     "end_location" : {
+                        "lat" : 40.7669678,
+                        "lng" : -73.9733542
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "w|xwFv{nbMKDC?E?CACCEAGEGCc@Y]?CC_@]a@UOEKCM?K@QFcB`AG@ABA@AFANAP"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7650826,
+                        "lng" : -73.9732432
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 561
+                     },
+                     "duration" : {
+                        "text" : "7 mins",
+                        "value" : 423
+                     },
+                     "end_location" : {
+                        "lat" : 40.7697267,
+                        "lng" : -73.97796240000001
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "qhywFl|nbMKBOLa@LSLSH}@\\iA@SPQPOTETCZEb@NfAD`@A^ARKr@ABCL?@ERa@xAK^QZOPm@n@g@f@UVMVKVGRGTCXAVAR"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7669678,
+                        "lng" : -73.9733542
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "174 ft",
+                        "value" : 53
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 37
+                     },
+                     "end_location" : {
+                        "lat" : 40.77015979999999,
+                        "lng" : -73.97822499999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e toward \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "yyywFfyobMIJQJe@TSD"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7697267,
+                        "lng" : -73.97796240000001
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "285 ft",
+                        "value" : 87
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 77
+                     },
+                     "end_location" : {
+                        "lat" : 40.7704719,
+                        "lng" : -73.97913489999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e toward \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "o|ywFzzobMIl@APAPCTM`@ERWV"
+                     },
+                     "start_location" : {
+                        "lat" : 40.77015979999999,
+                        "lng" : -73.97822499999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "105 ft",
+                        "value" : 32
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 27
+                     },
+                     "end_location" : {
+                        "lat" : 40.7704548,
+                        "lng" : -73.979505
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e toward \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "m~ywFp`pbM@F@D@@?@?@?B@@?@?B?BAF?BAX"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7704719,
+                        "lng" : -73.97913489999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "174 ft",
+                        "value" : 53
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 41
+                     },
+                     "end_location" : {
+                        "lat" : 40.7708024,
+                        "lng" : -73.9799233
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e toward \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "i~ywFzbpbMOFQNILYl@"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7704548,
+                        "lng" : -73.979505
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "108 ft",
+                        "value" : 33
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 22
+                     },
+                     "end_location" : {
+                        "lat" : 40.7705407,
+                        "lng" : -73.98011699999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "o`zwFnepbMr@f@"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7708024,
+                        "lng" : -73.9799233
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "220 ft",
+                        "value" : 67
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 54
+                     },
+                     "end_location" : {
+                        "lat" : 40.7708316,
+                        "lng" : -73.9808108
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eW 63rd St\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "{~ywFvfpbMy@hC"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7705407,
+                        "lng" : -73.98011699999999
+                     },
+                     "travel_mode" : "WALKING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : [
+                  {
+                     "location" : {
+                        "lat" : 40.7663848,
+                        "lng" : -73.9727724
+                     },
+                     "step_index" : 3,
+                     "step_interpolation" : 0.6416757269519339
+                  }
+               ]
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "wrxwFlvmbMwKd]vBzAQ\\Ob@E^D^@DKDI?UMk@]]?CC_@]a@U[IY@QFcB`AIDCHC`@KBOLa@LSLqAf@iA@SPQPOTETI~@ThBCr@QfAg@lBK^QZ}@`A}@~@Yn@Oh@Ep@ARIJw@`@SDIl@Cb@Qv@ERWVBL@H@JAJAXOF[\\Yl@r@f@y@hC"
+         },
+         "summary" : "E 61st St",
+         "warnings" : [
+            "Walking directions are in beta.    Use caution – This route may be missing sidewalks or pedestrian paths."
+         ],
+         "waypoint_order" : []
+      },
+      {
+         "bounds" : {
+            "northeast" : {
+               "lat" : 40.7708316,
+               "lng" : -73.96727319999999
+            },
+            "southwest" : {
+               "lat" : 40.763483,
+               "lng" : -73.9808108
+            }
+         },
+         "copyrights" : "Map data ©2016 Google",
+         "legs" : [
+            {
+               "distance" : {
+                  "text" : "1.1 mi",
+                  "value" : 1782
+               },
+               "duration" : {
+                  "text" : "23 mins",
+                  "value" : 1384
+               },
+               "end_address" : "4-30 W 63rd St, New York, NY 10023, USA",
+               "end_location" : {
+                  "lat" : 40.7708316,
+                  "lng" : -73.9808108
+               },
+               "start_address" : "781 Lexington Ave, New York, NY 10065, USA",
+               "start_location" : {
+                  "lat" : 40.763483,
+                  "lng" : -73.96727319999999
+               },
+               "steps" : [
+                  {
+                     "distance" : {
+                        "text" : "0.3 mi",
+                        "value" : 465
+                     },
+                     "duration" : {
+                        "text" : "6 mins",
+                        "value" : 367
+                     },
+                     "end_location" : {
+                        "lat" : 40.7655163,
+                        "lng" : -73.97210059999999
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorthwest\u003c/b\u003e on \u003cb\u003eE 61st St\u003c/b\u003e toward \u003cb\u003ePark Ave\u003c/b\u003e",
+                     "polyline" : {
+                        "points" : "wrxwFlvmbM}BlHQf@aCpHeC|H"
+                     },
+                     "start_location" : {
+                        "lat" : 40.763483,
+                        "lng" : -73.96727319999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "249 ft",
+                        "value" : 76
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 56
+                     },
+                     "end_location" : {
+                        "lat" : 40.76492409999999,
+                        "lng" : -73.9725552
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003e5th Ave\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "o_ywFrtnbMvBzA"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7655163,
+                        "lng" : -73.97210059999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "423 ft",
+                        "value" : 129
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 98
+                     },
+                     "end_location" : {
+                        "lat" : 40.7645929,
+                        "lng" : -73.97364809999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eDoris C Freedman Pl\u003c/b\u003e/\u003cb\u003eGrand Army Plaza\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eContinue to follow Grand Army Plaza\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "w{xwFnwnbMQ\\KXCHAFAFAH?D@F?H@D@F@DBD@BBBBBDDDDh@^\\R"
+                     },
+                     "start_location" : {
+                        "lat" : 40.76492409999999,
+                        "lng" : -73.9725552
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 287
+                     },
+                     "duration" : {
+                        "text" : "4 mins",
+                        "value" : 223
+                     },
+                     "end_location" : {
+                        "lat" : 40.76584889999999,
+                        "lng" : -73.97662769999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eW 59th St\u003c/b\u003e/\u003cb\u003eCentral Park S\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "uyxwFh~nbMQ`@wCdJe@~AKZ_@nA"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7645929,
+                        "lng" : -73.97364809999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "486 ft",
+                        "value" : 148
+                     },
+                     "duration" : {
+                        "text" : "2 mins",
+                        "value" : 120
+                     },
+                     "end_location" : {
+                        "lat" : 40.7669879,
+                        "lng" : -73.97741359999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "qaywF|pobM_@?ODKHQTQNe@\\K@QDMHQHONIPEH"
+                     },
+                     "start_location" : {
+                        "lat" : 40.76584889999999,
+                        "lng" : -73.97662769999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "0.2 mi",
+                        "value" : 273
+                     },
+                     "duration" : {
+                        "text" : "3 mins",
+                        "value" : 206
+                     },
+                     "end_location" : {
+                        "lat" : 40.7689946,
+                        "lng" : -73.97843829999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "uhywFxuobMMBY?GAUGQMWEK?MBOJm@d@EAIPI^K\\GXIPEPSPMHIDG@S?e@@[?"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7669879,
+                        "lng" : -73.97741359999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "331 ft",
+                        "value" : 101
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 69
+                     },
+                     "end_location" : {
+                        "lat" : 40.7697011,
+                        "lng" : -73.9787544
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e toward \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "euywFf|obMCMAECEECGCE?IBIB]NENCBCF[^CBGDE@A?"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7689946,
+                        "lng" : -73.97843829999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "92 ft",
+                        "value" : 28
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 21
+                     },
+                     "end_location" : {
+                        "lat" : 40.76986369999999,
+                        "lng" : -73.978982
+                     },
+                     "html_instructions" : "Slight \u003cb\u003eleft\u003c/b\u003e toward \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-slight-left",
+                     "polyline" : {
+                        "points" : "syywFd~obMAFCFCDABCBEDE@A@?@AB"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7697011,
+                        "lng" : -73.9787544
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "210 ft",
+                        "value" : 64
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 59
+                     },
+                     "end_location" : {
+                        "lat" : 40.7703225,
+                        "lng" : -73.9789078
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e toward \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "szywFr_pbMEACAC?E?C@E@CDA@CJEDA@A?C?e@i@"
+                     },
+                     "start_location" : {
+                        "lat" : 40.76986369999999,
+                        "lng" : -73.978982
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "85 ft",
+                        "value" : 26
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 21
+                     },
+                     "end_location" : {
+                        "lat" : 40.7704719,
+                        "lng" : -73.97913489999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e toward \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "o}ywFd_pbMERWV"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7703225,
+                        "lng" : -73.9789078
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "105 ft",
+                        "value" : 32
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 27
+                     },
+                     "end_location" : {
+                        "lat" : 40.7704548,
+                        "lng" : -73.979505
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e toward \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "m~ywFp`pbM@F@D@@?@?@?B@@?@?B?BAF?BAX"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7704719,
+                        "lng" : -73.97913489999999
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "174 ft",
+                        "value" : 53
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 41
+                     },
+                     "end_location" : {
+                        "lat" : 40.7708024,
+                        "lng" : -73.9799233
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e toward \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "i~ywFzbpbMOFQNILYl@"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7704548,
+                        "lng" : -73.979505
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "108 ft",
+                        "value" : 33
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 22
+                     },
+                     "end_location" : {
+                        "lat" : 40.7705407,
+                        "lng" : -73.98011699999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e onto \u003cb\u003eCentral Park West\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : {
+                        "points" : "o`zwFnepbMr@f@"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7708024,
+                        "lng" : -73.9799233
+                     },
+                     "travel_mode" : "WALKING"
+                  },
+                  {
+                     "distance" : {
+                        "text" : "220 ft",
+                        "value" : 67
+                     },
+                     "duration" : {
+                        "text" : "1 min",
+                        "value" : 54
+                     },
+                     "end_location" : {
+                        "lat" : 40.7708316,
+                        "lng" : -73.9808108
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e onto \u003cb\u003eW 63rd St\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the right\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : {
+                        "points" : "{~ywFvfpbMy@hC"
+                     },
+                     "start_location" : {
+                        "lat" : 40.7705407,
+                        "lng" : -73.98011699999999
+                     },
+                     "travel_mode" : "WALKING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : [
+                  {
+                     "location" : {
+                        "lat" : 40.76515029999999,
+                        "lng" : -73.9749321
+                     },
+                     "step_index" : 3,
+                     "step_interpolation" : 0.4340882990932786
+                  }
+               ]
+            }
+         ],
+         "overview_polyline" : {
+            "points" : "wrxwFlvmbMwKd]vBzAQ\\Ob@E^D^JRx@n@\\RQ`@}DdMk@jB_@?OD]^w@l@]F_@RY`@EHMBa@AUGQMc@E]Nm@d@EASp@c@zAa@ZQFy@@[?CMEKMGOBg@RIR_@f@SJKXQLADICSBOXC@i@i@ERWVBL@H@JAJAXOF[\\Yl@r@f@y@hC"
+         },
+         "summary" : "E 61st St",
+         "warnings" : [
+            "Walking directions are in beta.    Use caution – This route may be missing sidewalks or pedestrian paths."
+         ],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}
