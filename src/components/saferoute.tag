@@ -60,7 +60,13 @@
         time: '1 h 20 min',
         saftey: 7,
         openNow: 21,
-        crimes: 1
+        crimes: 1,
+        waypoints: [
+          {lat: 37.772, lng: -122.214},
+          {lat: 21.291, lng: -157.821},
+          {lat: -18.142, lng: 178.431},
+          {lat: -27.467, lng: 153.027}
+        ]
       },
       {
         title: 'via El Camino Real',
@@ -68,7 +74,13 @@
         time: '4 h 37 min',
         saftey: 5,
         openNow: 9,
-        crimes: 20
+        crimes: 20,
+        waypoints: [
+          {lat: 37.772, lng: -122.214},
+          {lat: 21.291, lng: -157.821},
+          {lat: -18.142, lng: 178.431},
+          {lat: -27.467, lng: 153.027}
+        ]
       },
       {
         title: 'via E Bayshore Rd',
@@ -76,24 +88,43 @@
         time: '2 h 40 min',
         saftey: 2,
         openNow: 5,
-        crimes: 43
+        crimes: 43,
+        waypoints: [
+          {lat: 37.772, lng: -122.214},
+          {lat: 21.291, lng: -157.821},
+          {lat: -18.142, lng: 178.431},
+          {lat: -27.467, lng: 153.027}
+        ]
       }
     ];
     const self = this;
 
-    window.initMap = () => {
+    window.initMap = (zoom = 3, center = {lat: 0, lng: -180}) => {
       self.map = new google.maps.Map(document.getElementById('map'), {
         zoom: 3,
         center: {lat: 0, lng: -180},
       });
 
       const flightPlanCoordinates = [
-          {lat: 37.772, lng: -122.214},
-          {lat: 21.291, lng: -157.821},
-          {lat: -18.142, lng: 178.431},
-          {lat: -27.467, lng: 153.027}
-        ];
+        {lat: 37.772, lng: -122.214},
+        {lat: 21.291, lng: -157.821},
+        {lat: -18.142, lng: 178.431},
+        {lat: -27.467, lng: 153.027}
+      ];
 
+      for (let i = 0; i < self.results.length; i++) {
+        const waypoints = self.results[i].waypoints;
+        const path = new google.maps.Polyline({
+          path: waypoints,
+          geodesic: true,
+          strokeColor: '#FF0000',
+          strokeOpacity: 1.0,
+          strokeWeight: 2
+        });
+        path.setMap(self.map);
+      }
+
+      /*
       const flightPath = new google.maps.Polyline({
         path: flightPlanCoordinates,
         geodesic: true,
@@ -103,6 +134,7 @@
       });
 
       flightPath.setMap(self.map);
+      */
     };
 
     function request (method, url) {
@@ -134,11 +166,23 @@
       const destination = event.target[1].value;
     }
 
+    function apiRequest (origin, destination) {
+      const requestURL = `http:\/\/skrenta.com`;
+      request('get', requestURL)
+        .then(result => {
+          self.result = JSON.parse(result);
+          window.initMap();
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    }
+
     this.on('mount', () => {
       let script = document.createElement('script');
       script.setAttribute('id', 'gmap_script');
 		  script.type = 'text/javascript';
-			script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCnOa8LV_tSyvras9MrV33mGqtvil2c4H8&callback=window.initMap';
+			script.src = 'https:\/\/maps.googleapis.com/maps/api/js?key=AIzaSyCnOa8LV_tSyvras9MrV33mGqtvil2c4H8&callback=window.initMap';
 			document.body.appendChild(script);
     });
   </script>
