@@ -105,13 +105,6 @@
         center: {lat: 0, lng: -180},
       });
 
-      const flightPlanCoordinates = [
-        {lat: 37.772, lng: -122.214},
-        {lat: 21.291, lng: -157.821},
-        {lat: -18.142, lng: 178.431},
-        {lat: -27.467, lng: 153.027}
-      ];
-
       for (let i = 0; i < self.results.length; i++) {
         const waypoints = self.results[i].waypoints;
         const path = new google.maps.Polyline({
@@ -123,55 +116,38 @@
         });
         path.setMap(self.map);
       }
-
-      /*
-      const flightPath = new google.maps.Polyline({
-        path: flightPlanCoordinates,
-        geodesic: true,
-        strokeColor: '#FF0000',
-        strokeOpacity: 1.0,
-        strokeWeight: 2
-      });
-
-      flightPath.setMap(self.map);
-      */
     };
 
     function request (method, url) {
       return new Promise((resolve, reject) => {
-        const XHR = new XMLHttpRequest();
-        xhr.open(method, url);
-        xhr.onload = () => {
-          if (this.status >= 200 && this.status < 300) {
-            resolve(xhr.response);
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = () => {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            resolve(xhr.responseText);
           } else {
-            reject({
-              status: this.status,
-              statusText: xhr.statusText
-            });
+            reject(xhr.status);
           }
         };
-        xhr.onerror = () => {
-          reject({
-            status: this.status,
-            statusText: xhr.statusText
-          });
-          xhr.send();
-        };
+        xhr.open(method, url, true);
+        xhr.send(null);
       });
     }
 
     handler (event) {
       const origin = event.target[0].value;
       const destination = event.target[1].value;
+      if (origin && destination) apiRequest(origin, destination);
     }
 
     function apiRequest (origin, destination) {
-      const requestURL = `http:\/\/skrenta.com`;
-      request('get', requestURL)
+      const requestURL = `http:\/\/www.skrenta.com/safety/routes.cgi?origin=${origin}&destination=${destination}`;
+      console.log('Made it here ' + requestURL);
+      request('GET', requestURL)
         .then(result => {
+          console.log(result);
           self.result = JSON.parse(result);
           window.initMap();
+          self.update();
         })
         .catch(err => {
           console.log(err);
