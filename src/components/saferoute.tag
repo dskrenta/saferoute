@@ -5,8 +5,8 @@
           <div class="input-wrapper">
             <form class="input-form" onsubmit={handler}>
               <div class="form-group">
-                <input type="text" class="form-input" placeholder="Origin"></input>
-                <input type="text" class="form-input" placeholder="Destination"></input>
+                <input type="text" class="form-input" value="101 deer lane san carlos california" placeholder="Origin"></input>
+                <input type="text" class="form-input" value="101 howard san francisco" placeholder="Destination"></input>
                 <button type="submit" class="btn btn-primary input-group-btn btn-block">Go</button>
               </div>
             </form>
@@ -15,7 +15,7 @@
           <virtual each={results}>
             <div class="card">
               <div class="card-header">
-                  <h4 class="card-title">{title} <small class="label">Safety: {saftey}/10</small></h4>
+                  <h4 class="card-title">{title} <small class="label">Safety: {safety}/10</small></h4>
                   <h6 class="card-meta">{time} &middot; {distance} &middot; {crimes} recent crimes &middot; {openNow} open places</h6>
               </div>
             </div>
@@ -100,37 +100,44 @@
     const self = this;
 
     window.initMap = (zoom = 3, center = {lat: 0, lng: -180}) => {
+      const bounds = new google.maps.LatLngBounds();
+
       self.map = new google.maps.Map(document.getElementById('map'), {
         zoom: 3,
         center: {lat: 0, lng: -180},
       });
 
       for (let i = 0; i < self.results.length; i++) {
-        const waypoints = self.results[i].waypoints;
+        let waypoints = self.results[i].waypoints;
+        let numPoints = [];
+        for (let i = 0; i < waypoints.length; i++) {
+          const lat = Number(waypoints[i].lat);
+          const lng = Number(waypoints[i].lng);
+          const latLngObj = {lat: lat, lng: lng};
+          numPoints.push(latLngObj);
+          bounds.extend(latLngObj);
+        }
         const path = new google.maps.Polyline({
-          path: waypoints,
+          path: numPoints,
           geodesic: true,
           strokeColor: '#FF0000',
           strokeOpacity: 1.0,
           strokeWeight: 2
         });
         path.setMap(self.map);
+        self.map.fitBounds(bounds);
       }
     };
 
-    function request (method, url) {
-      return new Promise((resolve, reject) => {
-        const xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = () => {
-          if (xhr.readyState === 4 && xhr.status === 200) {
-            resolve(xhr.responseText);
-          } else {
-            reject(xhr.status);
-          }
-        };
-        xhr.open(method, url, true);
-        xhr.send(null);
-      });
+    function request (url, callback)  {
+      const xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+          callback(xhr.responseText);
+        }
+      }
+      xhr.open("GET", url, true);
+      xhr.send(null);
     }
 
     handler (event) {
@@ -140,17 +147,13 @@
     }
 
     function apiRequest (origin, destination) {
-      const requestURL = `http:\/\/www.skrenta.com/safety/routes.cgi?origin=${origin}&destination=${destination}`;
-      console.log('Made it here ' + requestURL);
-      request('GET', requestURL)
-        .then(result => {
-          console.log(result);
-          self.result = JSON.parse(result);
+      const requestURL = `http:\/\/www.skrenta.com/safety/routes.cgi?origin=${encodeURIComponent(origin)}&destination=${encodeURIComponent(destination)}`;
+        request(requestURL, (response) => {
+          let result = JSON.parse(response);
+          self.results = result.routes;
+          console.log(self.results);
           window.initMap();
           self.update();
-        })
-        .catch(err => {
-          console.log(err);
         });
     }
 
