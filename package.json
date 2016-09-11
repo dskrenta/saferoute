@@ -4,8 +4,7 @@
   "description": "riot-quickstart",
   "main": "",
   "scripts": {
-    "serve": "pm2 start app.js",
-    "start": "node app.js",
+    "start": "gulp",
     "build": "riot -w src/components src/dist/components.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -5,8 +5,8 @@
           <div class="input-wrapper">
             <form class="input-form" onsubmit={handler}>
               <div class="form-group">
-                <input type="text" class="form-input" value="101 deer lane san carlos california" placeholder="Origin"></input>
-                <input type="text" class="form-input" value="101 howard san francisco" placeholder="Destination"></input>
+                <input type="text" class="form-input" value="79 Hudson River Greenway, New York, NY 10024" placeholder="Origin"></input>
+                <input type="text" class="form-input" value="564-566 Hudson Street, New York, NY 10014" placeholder="Destination"></input>
                 <button type="submit" class="btn btn-primary input-group-btn btn-block">Go</button>
               </div>
             </form>
@@ -53,6 +53,7 @@
 
   <script>
     this.map;
+    this.pinpoints;
     this.results = [
       {
         title: 'via Middlefield Rd',
@@ -99,6 +100,13 @@
     ];
     const self = this;
 
+    function sortBySafety (a, b) {
+
+      if (a < b) return -1;
+      if (a > b) return 1;
+      return 0;
+    }
+
     window.initMap = (zoom = 3, center = {lat: 0, lng: -180}) => {
       const bounds = new google.maps.LatLngBounds();
 
@@ -106,6 +114,8 @@
         zoom: 3,
         center: {lat: 0, lng: -180},
       });
+
+      const colors = ['#0000ff', '#800080', '#ff0000'];
 
       for (let i = 0; i < self.results.length; i++) {
         let waypoints = self.results[i].waypoints;
@@ -120,12 +130,25 @@
         const path = new google.maps.Polyline({
           path: numPoints,
           geodesic: true,
-          strokeColor: '#FF0000',
+          strokeColor: colors[i],
           strokeOpacity: 1.0,
           strokeWeight: 2
         });
         path.setMap(self.map);
         self.map.fitBounds(bounds);
+      }
+
+      const crime = 'crime.png';
+
+      for (let i = 0; i < self.pinpoints.length; i++) {
+        let latLngObj = {lat: self.pinpoints[i].lat, lng: self.pinpoints[i].lng};
+        const image = (self.pinpoints[i].tag === 'crime') ? crime : '';
+        console.log(self.pinpoints[i].tag);
+        const marker = new google.maps.Marker({
+          position: latLngObj,
+          map: self.map,
+          icon: image
+        });
       }
     };
 
@@ -150,8 +173,10 @@
       const requestURL = `http:\/\/www.skrenta.com/safety/routes.cgi?origin=${encodeURIComponent(origin)}&destination=${encodeURIComponent(destination)}`;
         request(requestURL, (response) => {
           let result = JSON.parse(response);
+          self.pinpoints = result.pinpoints;
           self.results = result.routes;
           console.log(self.results);
+          console.log(self.pinpoints);
           window.initMap();
           self.update();
         });
