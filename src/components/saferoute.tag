@@ -15,7 +15,7 @@
           <virtual each={results}>
             <div class="card">
               <div class="card-header">
-                  <h4 class="card-title">{title} <small class="label">Safety: {saftey}</small></h4>
+                  <h4 class="card-title">{title} <small class="label">Safety: {saftey}/10</small></h4>
                   <h6 class="card-meta">{time} &middot; {distance} &middot; {crimes} recent crimes &middot; {openNow} open places</h6>
               </div>
             </div>
@@ -83,10 +83,51 @@
 
     window.initMap = () => {
       self.map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
-        zoom: 8
+        zoom: 3,
+        center: {lat: 0, lng: -180},
       });
+
+      const flightPlanCoordinates = [
+          {lat: 37.772, lng: -122.214},
+          {lat: 21.291, lng: -157.821},
+          {lat: -18.142, lng: 178.431},
+          {lat: -27.467, lng: 153.027}
+        ];
+
+      const flightPath = new google.maps.Polyline({
+        path: flightPlanCoordinates,
+        geodesic: true,
+        strokeColor: '#FF0000',
+        strokeOpacity: 1.0,
+        strokeWeight: 2
+      });
+
+      flightPath.setMap(self.map);
     };
+
+    function request (method, url) {
+      return new Promise((resolve, reject) => {
+        const XHR = new XMLHttpRequest();
+        xhr.open(method, url);
+        xhr.onload = () => {
+          if (this.status >= 200 && this.status < 300) {
+            resolve(xhr.response);
+          } else {
+            reject({
+              status: this.status,
+              statusText: xhr.statusText
+            });
+          }
+        };
+        xhr.onerror = () => {
+          reject({
+            status: this.status,
+            statusText: xhr.statusText
+          });
+          xhr.send();
+        };
+      });
+    }
 
     handler (event) {
       const origin = event.target[0].value;
@@ -94,13 +135,11 @@
     }
 
     this.on('mount', () => {
-      /*
       let script = document.createElement('script');
       script.setAttribute('id', 'gmap_script');
 		  script.type = 'text/javascript';
 			script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCnOa8LV_tSyvras9MrV33mGqtvil2c4H8&callback=window.initMap';
 			document.body.appendChild(script);
-      */
     });
   </script>
 </saferoute>
