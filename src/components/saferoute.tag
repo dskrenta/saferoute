@@ -100,13 +100,6 @@
     ];
     const self = this;
 
-    function sortBySafety (a, b) {
-
-      if (a < b) return -1;
-      if (a > b) return 1;
-      return 0;
-    }
-
     window.initMap = (zoom = 3, center = {lat: 0, lng: -180}) => {
       const bounds = new google.maps.LatLngBounds();
 
