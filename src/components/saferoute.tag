@@ -15,13 +15,10 @@
           <virtual each={results}>
             <div class="card">
               <div class="card-header">
-                  <h4 class="card-title">{title} <small class="label">{time}</small></h4>
-                  <h6 class="card-meta">{distance}</h6>
+                  <h4 class="card-title">{title} <small class="label">Safety: {saftey}</small></h4>
+                  <h6 class="card-meta">{time} &middot; {distance} &middot; {crimes} recent crimes &middot; {openNow} open places</h6>
               </div>
-              <div class="card-body">
-                  To make a contribution to the world by making tools for the mind that advance humankind.
-              </div>
-          </div>
+            </div>
           </virtual>
         </div>
         <div class="column col-8">
@@ -49,6 +46,9 @@
     .form-input {
       margin-bottom: 1em;
     }
+    .label {
+      float: right;
+    }
   </style>
 
   <script>
@@ -58,17 +58,25 @@
         title: 'via Middlefield Rd',
         distance: '47 miles',
         time: '1 h 20 min',
-        snippet: ''
+        saftey: 7,
+        openNow: 21,
+        crimes: 1
       },
       {
         title: 'via El Camino Real',
         distance: '29 miles',
-        time: '4 h 37 min'
+        time: '4 h 37 min',
+        saftey: 5,
+        openNow: 9,
+        crimes: 20
       },
       {
         title: 'via E Bayshore Rd',
         distance: '98 miles',
-        time: '2 h 40 min'
+        time: '2 h 40 min',
+        saftey: 2,
+        openNow: 5,
+        crimes: 43
       }
     ];
     const self = this;
