@@ -115,7 +115,7 @@
         center: {lat: 0, lng: -180},
       });
 
-      const colors = ['#0000ff', '#800080', '#ff0000'];
+      const colors = ['#ff0000', '#0000ff', '#800080'];
 
       for (let i = 0; i < self.results.length; i++) {
         let waypoints = self.results[i].waypoints;
