@@ -166,7 +166,7 @@
     };
 
     function formatImage (name) {
-      return `${window.location}/images/${name}.png`;
+      return `${window.location}/images/${name}2.png`;
     }
 
     function request (url, callback)  {
