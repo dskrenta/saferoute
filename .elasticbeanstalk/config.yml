@@ -1,0 +1,11 @@
+branch-defaults:
+  eb:
+    environment: saferoute-dev
+    group_suffix: null
+global:
+  application_name: saferoute
+  default_ec2_keyname: null
+  default_platform: Docker 1.11.2
+  default_region: us-west-1
+  profile: eb-cli
+  sc: git

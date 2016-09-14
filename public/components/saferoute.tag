@@ -131,11 +131,21 @@
         self.map.fitBounds(bounds);
       }
 
-      const crime = `${window.location}/images/crime.png`;
+      // const crime = `${window.location}/images/crime.png`;
 
       for (let i = 0; i < self.pinpoints.length; i++) {
         let latLngObj = {lat: self.pinpoints[i].lat, lng: self.pinpoints[i].lng};
-        const image = (self.pinpoints[i].tag === 'crime') ? crime : '';
+        // const image = (self.pinpoints[i].tag === 'crime') ? crime : '';
+        let image = '';
+
+        switch (self.pinpoints[i].tag) {
+          case 'crime':
+            image = formatImage('crime');
+            break;
+          default:
+            break;
+        }
+
         console.log(self.pinpoints[i].tag);
         const marker = new google.maps.Marker({
           position: latLngObj,
@@ -144,6 +154,10 @@
         });
       }
     };
+
+    function formatImage (name) {
+      return `${window.location}/images/${name}.png`;
+    }
 
     function request (url, callback)  {
       const xhr = new XMLHttpRequest();
