@@ -1,5 +1,5 @@
 {
-  "name": "solkar",
+  "name": "saferoute",
   "version": "0.0.0",
   "description": "",
   "main": "./build/app.js",
@@ -18,24 +18,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dskrenta/solkar.git"
+    "url": "git+https://github.com/dskrenta/saferoute.git"
   },
   "author": "David Skrenta <dskrenta@gmail.com>",
-  "license": "ISC",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/dskrenta/solkar/issues"
+    "url": "https://github.com/dskrenta/saferoute/issues"
   },
-  "homepage": "https://github.com/dskrenta/solkar#readme",
+  "homepage": "https://github.com/dskrenta/saferoute#readme",
   "dependencies": {
     "cheerio": "^0.22.0",
     "koa": "^2.0.0",
-    "koa-router": "^7.0.1",
     "koa-serve-static": "^1.0.0",
-    "koa-socket": "^4.4.0",
-    "request": "^2.74.0",
-    "riot": "^2.5.0",
-    "riot-observable": "^3.0.0-alpha.1",
-    "yahoo-finance": "^0.2.14"
+    "riot": "^2.5.0"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
@@ -53,7 +48,6 @@
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-riot": "^0.4.0",
     "rollup-plugin-uglify": "^1.0.1",
-    "rollup-watch": "^2.5.0",
-    "watch-cli": "^0.2.1"
+    "rollup-watch": "^2.5.0"
   }
 }
