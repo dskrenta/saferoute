@@ -131,12 +131,33 @@
         self.map.fitBounds(bounds);
       }
 
-      const crime = `${window.location}/images/crime.png`;
-
       for (let i = 0; i < self.pinpoints.length; i++) {
         let latLngObj = {lat: self.pinpoints[i].lat, lng: self.pinpoints[i].lng};
-        const image = (self.pinpoints[i].tag === 'crime') ? crime : '';
-        console.log(self.pinpoints[i].tag);
+        let image = '';
+
+        switch (self.pinpoints[i].tag) {
+          case 'crime':
+            image = formatImage('police');
+            break;
+          case 'atm':
+            image = formatImage('atm');
+            break;
+          case 'food':
+            image = formatImage('food');
+            break;
+          case 'hotel':
+            image = formatImage('hotel');
+            break;
+          case 'movie':
+            image = formatImage('movie');
+            break;
+          case 'rx':
+            image = formatImage('pharmacy');
+            break;
+          default:
+            break;
+        }
+
         const marker = new google.maps.Marker({
           position: latLngObj,
           map: self.map,
@@ -144,6 +165,10 @@
         });
       }
     };
+
+    function formatImage (name) {
+      return `${window.location}/images/${name}.png`;
+    }
 
     function request (url, callback)  {
       const xhr = new XMLHttpRequest();
@@ -168,8 +193,6 @@
           let result = JSON.parse(response);
           self.pinpoints = result.pinpoints;
           self.results = result.routes;
-          console.log(self.results);
-          console.log(self.pinpoints);
           window.initMap();
           self.update();
         });
