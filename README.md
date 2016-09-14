@@ -1,5 +1,7 @@
 # Safe Route
 
+Choose the safest route possible to travel when you're in a new city or walking alone and want to feel more secure.
+
 ## Install
 
 ```
