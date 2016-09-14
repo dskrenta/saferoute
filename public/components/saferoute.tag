@@ -131,7 +131,7 @@
         self.map.fitBounds(bounds);
       }
 
-      const crime = 'crime.png';
+      const crime = `${window.location}/images/crime.png`;
 
       for (let i = 0; i < self.pinpoints.length; i++) {
         let latLngObj = {lat: self.pinpoints[i].lat, lng: self.pinpoints[i].lng};

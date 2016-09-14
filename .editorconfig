@@ -1,0 +1,9 @@
+# 4 space indentation style for python files
+[*.py]
+indent_style = space
+indent_style = 4
+
+# 4 space
+[*.js]
+indent_style = space
+indent_size = 2
