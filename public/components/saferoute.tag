@@ -133,7 +133,6 @@
 
       for (let i = 0; i < self.pinpoints.length; i++) {
         let latLngObj = {lat: self.pinpoints[i].lat, lng: self.pinpoints[i].lng};
-        let image = '';
 
         switch (self.pinpoints[i].tag) {
           case 'crime':
